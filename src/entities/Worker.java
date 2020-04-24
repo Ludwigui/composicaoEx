@@ -9,7 +9,7 @@ import entities.enums.WorkerLevel;
 public class Worker {
 	
 	private String name;
-	WorkerLevel level;
+	private WorkerLevel level;
 	private Double baseSalary;
 	
 	private Department department;
@@ -19,8 +19,7 @@ public class Worker {
 		
 	}
 
-	public Worker(String name, WorkerLevel level, Double baseSalary, Department department,
-			List<HourContract> contracts) {
+	public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
